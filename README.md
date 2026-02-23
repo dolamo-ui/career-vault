@@ -1,16 +1,59 @@
-# React + Vite
+# CareerVault 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Tired of losing track of job applications and feeling overwhelmed? Let CareerVault organize your search and give you peace of mind.**
 
-Currently, two official plugins are available:
+Unlike Excel or Notion, **CareerVault is built specifically for job seekers**, offering **easy interview scheduling, progress tracking, and instant export of application history**. With AI-powered interview preparation, CareerVault helps you stay on top of your career journey.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🌟 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Track job applications with status updates: Applied, Interview, Hired, Rejected  
+- Responsive dashboard built with **Tailwind CSS**  
+- Calendar-based interview scheduler  
+- Progress visualization with charts and analytics  
+- Easy export of application history  
+- AI-powered interview suggestions  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Built With
+
+- **Frontend:** React, TypeScript, Vite, Tailwind CSS  
+- **Backend & Database:** Firebase (Authentication & Firestore)  
+- **AI/ML:** OpenAI API (for interview preparation suggestions)  
+- **Version Control:** Git & GitHub  
+- **Design Tools:** Figma  
+
+---
+
+## 🖥 Screenshots
+<img width="1909" height="5270" alt="screencapture-localhost-5173-2026-02-23-21_10_24" src="https://github.com/user-attachments/assets/7f8043c4-574b-4242-8bb4-2902ca2c6cb4" />
+<img width="1909" height="1157" alt="screencapture-localhost-5173-login-2026-02-23-22_07_00" src="https://github.com/user-attachments/assets/47051ffd-76fb-48fd-88ea-5b428ce232df" />
+<img width="1909" height="2718" alt="screencapture-localhost-5173-home-2026-02-23-23_04_41" src="https://github.com/user-attachments/assets/6dee7d07-a050-41c6-8f44-4fe7d8546082" />
+
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js >= 18  
+- npm or yarn  
+- Firebase project setup for Authentication & Firestore  
+
+### Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/<your-username>/career-vault.git
+
+# Navigate into the project
+cd career-vault
+
+# Install dependencies
+npm install   # or yarn install
+
+# Start development server
+npm run dev   # or yarn dev
