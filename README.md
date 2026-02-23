@@ -47,7 +47,7 @@ Unlike Excel or Notion, **CareerVault is built specifically for job seekers**, o
 
 ```bash
 # Clone the repo
-git clone https://github.com/<your-username>/career-vault.git
+git clone https://github.com/dolamo-ui/career-vault.git
 
 # Navigate into the project
 cd career-vault
