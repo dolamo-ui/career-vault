@@ -37,7 +37,6 @@ const JobCard: React.FC<JobCardProps> = ({ job, onEdit, onDelete }) => {
     dot:  'bg-[#1A1A1A]/30',
   };
 
-  // ✅ Passes the full job object to InterviewPrep via route state
   const handleInterviewPrep = (): void => {
     navigate('/interview-prep', { state: { job } });
   };
@@ -93,7 +92,7 @@ const JobCard: React.FC<JobCardProps> = ({ job, onEdit, onDelete }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#C5A059] hover:underline truncate font-medium"
-                onClick={(e) => e.stopPropagation()}
+                onClick={(e: React.MouseEvent<HTMLAnchorElement>) => e.stopPropagation()}
               >
                 View listing
               </a>
@@ -108,14 +107,16 @@ const JobCard: React.FC<JobCardProps> = ({ job, onEdit, onDelete }) => {
           </p>
         )}
 
-        {/* ✅ AI Interview Prep button → navigates to /interview-prep */}
-        <button
-          onClick={handleInterviewPrep}
-          className="w-full flex items-center justify-center gap-2 px-3 py-2.5 mb-3 rounded-xl bg-gradient-to-r from-[#C5A059]/10 to-[#C5A059]/5 hover:from-[#C5A059]/20 hover:to-[#C5A059]/10 border border-[#C5A059]/15 hover:border-[#C5A059]/30 text-xs font-semibold text-[#C5A059] hover:text-[#B8903F] transition-all duration-300"
-        >
-          <Brain className="w-3.5 h-3.5" />
-          AI Interview Prep
-        </button>
+        {/* ✅ AI Interview Prep — only visible when status is Interview */}
+        {job.status === 'Interview' && (
+          <button
+            onClick={handleInterviewPrep}
+            className="w-full flex items-center justify-center gap-2 px-3 py-2.5 mb-3 rounded-xl bg-gradient-to-r from-[#C5A059]/10 to-[#C5A059]/5 hover:from-[#C5A059]/20 hover:to-[#C5A059]/10 border border-[#C5A059]/15 hover:border-[#C5A059]/30 text-xs font-semibold text-[#C5A059] hover:text-[#B8903F] transition-all duration-300"
+          >
+            <Brain className="w-3.5 h-3.5" />
+            AI Interview Prep
+          </button>
+        )}
 
         {/* Edit / Delete */}
         <div className="flex gap-2 pt-4 border-t border-black/[0.05] mt-auto">
